@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fff;
+  /* background-color: #190303; */
+  background-color: #6852f2;
+
   position: fixed;
   left: 0;
 
@@ -16,7 +18,8 @@
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  color: #333;
+  /* color: #6852f2; */
+  color: #fff;
   transition: color 0.3s ease;
 }
 
