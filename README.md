@@ -22,9 +22,31 @@ export default {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Use ngrok to expose your local server
+
+You can use [ngrok](https://ngrok.com/) to expose your local server to the internet. This is useful for testing your application on different devices or sharing it with others.
+
+1. Install ngrok globally:
+
+```bash
+npm install -g ngrok
+```
+
+2. Start your Vite server:
+
+```bash
+npm run dev --host
+```
+
+3. Expose your local server:
+
+```bash
+ngrok http https://localhost:5173
+```
