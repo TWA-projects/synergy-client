@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  /* background-color: transparent;  */
-  background-image: var(--bg-color);
+  background-color: transparent;
+  /* background-image: var(--bg-color-reversed); */
   position: relative; /* Ensures the header is positioned correctly */
   z-index: 10; /* Make sure header is above other content */
   left: 0;

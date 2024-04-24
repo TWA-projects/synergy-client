@@ -11,6 +11,7 @@
   --bg-color-reversed: linear-gradient(360deg, #3f1973, #8734bf);
   --bg-color-2: linear-gradient(red, yellow);
   --bg-color-3: linear-gradient(#3f1973, #8734bf);
+  --color-green:#00ff4a;
 }
 
 .logo {
