@@ -11,7 +11,7 @@ export const App = () => {
       <Header />
 
       <WelcomeMessage name='Lena' />
-      <main className='section'>
+      <main className='section' style={{ padding: '1rem' }}>
         <AnimatePresence initial={false}>
           <Outlet />
         </AnimatePresence>

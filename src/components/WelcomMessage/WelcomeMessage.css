@@ -10,8 +10,8 @@
 }
 
 .welcome-message h1 {
-  margin-bottom: 0.5rem; /* Add space below the heading */
-  font-size: 2.5rem; /* Large text size for the heading */
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
 }
 
 .welcome-message p {
