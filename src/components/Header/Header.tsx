@@ -1,5 +1,6 @@
 import React from 'react';
 import userIcon from '/giphy.gif';
+// import logo from '/logo.webp';
 import './Header.css';
 
 export const Header: React.FC = () => {
