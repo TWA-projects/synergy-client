@@ -9,6 +9,7 @@ export const App = () => {
   return (
     <div>
       <Header />
+
       <WelcomeMessage name='Lena' />
       <main className='section'>
         <AnimatePresence initial={false}>

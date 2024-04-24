@@ -4,6 +4,7 @@
   align-items: center;
   /* background-color: #190303; */
   background-image: var(--bg-color);
+  /* background-image: var(--bg-color-reversed); */
   position: fixed;
   left: 0;
   bottom: 0;

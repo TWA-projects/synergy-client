@@ -1,0 +1,42 @@
+/* ActionButton.css */
+.action-button {
+  font-size: 1rem; /* Set the font size to match your design */
+  color: #000; /* Text color */
+  background-color: #ffd700; /* Button background color */
+  border: none; /* No border */
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Mouse pointer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.1s ease; /* Smooth transitions for interactions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold; /* Bold font */
+
+  display: flex; /* Aligns the icon with the text */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+.action-button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover for a "lifted" effect */
+}
+
+.action-button:active {
+  transform: translateY(2px); /* Slight push down on click */
+}
+
+.action-button:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5); /* Custom focus style */
+}
+
+/* You might want to add additional media queries for responsiveness */
+.action-icon {
+  margin-right: 8px; /* Adds some space between the icon and the text */
+  height: 24px; /* Or your preferred size */
+  width: 24px; /* Maintain aspect ratio */
+  display: block; /* Prevents the icon from affecting the line height */
+  display: flex;
+}
