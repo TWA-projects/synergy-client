@@ -1,43 +1,17 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
+import { Outlet } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { NavigationMenu } from './components/NavigationMenu';
 
-import WebApp from '@twa-dev/sdk';
-import NavigationMenu from './components/NavigationMenu/NavigationMenu';
-
-function App() {
-  const [count, setCount] = useState(0);
-
+export const App = () => {
   return (
-    <>
-      <div>
-        <a href='https://vitejs.dev' target='_blank'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className='test-card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      {/* Here we add our button with alert callback */}
-      <div className='test-card'>
-        <button
-          onClick={() =>
-            WebApp.showAlert(`Hello World! Current count is ${count}`)
-          }
-        >
-          Show Alert
-        </button>
-      </div>
+    <div>
+      <main className='section'>
+        <AnimatePresence initial={false}>
+          <Outlet />
+        </AnimatePresence>
+      </main>
       <NavigationMenu />
-    </>
+    </div>
   );
-}
-
-export default App;
+};

@@ -1,55 +1,38 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 import './NavigationMenu.css';
 
-// const NavigationMenu: React.FC = () => {
-//   return (
-//     <nav className='navigationMenu'>
-//       <button className='navButton exercises active'>Программы</button>
-//       <button className='navButton statistics'>Питание</button>
-//       <button className='navButton settings'>Марафон</button>
-//     </nav>
-//   );
-// };
+const getLinkClass = ({ isActive }: { isActive: boolean }) =>
+  classNames('navButton', { active: isActive });
 
-const NavigationMenu: React.FC = () => {
+export const NavigationMenu: React.FC = () => {
   return (
-    <div className='tabs is-toggle is-centered navigationMenu'>
-      <ul className='is-flex'>
-        <li className='is-active'>
-          <button className='navButton'>
-            <span className='icon is-medium'>
-              <i className='fas fa-image' aria-hidden='true'></i>
-            </span>
-            {/* <span>Pictures</span> */}
-          </button>
-        </li>
-        <li>
-          <button className='navButton'>
-            <span className='icon is-medium'>
-              <i className='fas fa-music' aria-hidden='true'></i>
-            </span>
-            {/* <span>Music</span> */}
-          </button>
-        </li>
-        <li>
-          <button className='navButton'>
-            <span className='icon is-medium'>
-              <i className='fas fa-film' aria-hidden='true'></i>
-            </span>
-            {/* <span>Videos</span> */}
-          </button>
-        </li>
-        <li>
-          <button className='navButton'>
-            <span className='icon is-medium'>
-              <i className='far fa-file-alt' aria-hidden='true'></i>
-            </span>
-            {/* <span>Documents</span> */}
-          </button>
-        </li>
-      </ul>
-    </div>
+    <nav className='navigationMenu'>
+      <NavLink to='/' className={getLinkClass}>
+        <span className='icon is-medium'>
+          <i className='fas fa-dumbbell'></i>
+        </span>
+        <span className='label'>Exercises</span>
+      </NavLink>
+      <NavLink to='/biking' className={getLinkClass}>
+        <span className='icon is-medium'>
+          <i className='fa-solid fa-person-biking'></i>
+        </span>
+        <span className='label'>Biking</span>
+      </NavLink>
+      <NavLink to='/nutrition' className={getLinkClass}>
+        <span className='icon is-medium'>
+          <i className='fa-solid fa-plate-wheat'></i>
+        </span>
+        <span className='label'>Nutrition</span>
+      </NavLink>
+      <NavLink to='/tasks' className={getLinkClass}>
+        <span className='icon is-medium'>
+          <i className='fa-solid fa-list-check'></i>
+        </span>
+        <span className='label'>Checklist</span>
+      </NavLink>
+    </nav>
   );
 };
-
-export default NavigationMenu;

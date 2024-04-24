@@ -3,6 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --color-primary: #8734bf;
+  --color-secondary: #3f1973;
+  --color-tertiary: #0511f2;
+  --color-accent: #6852f2;
+  --bg-color: linear-gradient(180deg, #3f1973, #8734bf);
+  --bg-color-2: linear-gradient(red, yellow);
+  --bg-color-3: linear-gradient(#3f1973, #8734bf);
 }
 
 .logo {

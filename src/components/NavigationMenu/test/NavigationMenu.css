@@ -1,0 +1,38 @@
+.navigationMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #190303;
+  /* background-image: var(--bg-color); */
+  /* background-color: #fff; */
+
+  position: fixed;
+  left: 0;
+
+  bottom: 0;
+  width: 100vw;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navButton {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  /* color: #6852f2; */
+  color: #fff;
+  /* color: #000; */
+  transition: color 0.3s ease;
+}
+
+.navButton.active {
+  /* color: #000; */
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.navButton:focus {
+  outline: none;
+}
+
+/* Additional styles for icons and active states can be added here */

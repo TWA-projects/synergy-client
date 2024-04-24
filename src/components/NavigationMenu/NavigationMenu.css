@@ -3,28 +3,36 @@
   justify-content: space-around;
   align-items: center;
   /* background-color: #190303; */
-  background-color: #6852f2;
-
+  background-image: var(--bg-color);
   position: fixed;
   left: 0;
-
   bottom: 0;
   width: 100vw;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 0; /* Add padding to give some space at the top and bottom */
 }
 
 .navButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: none;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  /* color: #6852f2; */
-  color: #fff;
+  padding: 5px;
+  font-size: 12px; /* Smaller font size for text */
+  color: #fff; /* Color for icon and label text */
   transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline from text if using NavLink */
 }
 
-.navButton.active {
-  color: #000;
+.navButton .icon {
+  font-size: 20px; /* Set the size of icons */
+  margin-bottom: 4px; /* Space between icon and text */
+}
+
+.navButton.active,
+.navButton.active .label {
+  color: var(--color-accent); /* Make active state color for icon and label */
   font-weight: bold;
 }
 
@@ -32,4 +40,10 @@
   outline: none;
 }
 
-/* Additional styles for icons and active states can be added here */
+/* Styles for the text labels */
+.navButton span.label {
+  display: block;
+  font-size: 10px; /* Even smaller font size for text labels */
+  margin-top: 3px; /* Space between icon and label */
+  color: #fff; /* Color for icon and label text */
+}
