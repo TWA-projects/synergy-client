@@ -1,6 +1,6 @@
-import { MainScreen } from './MainScreen';
+import { ScreenFour } from './ScreenFour';
 import { ScreenTwo } from './ScreenTwo';
 import { ScreenThree } from './ScreenThree';
-import { ScreenFour } from './ScreenFour';
+import { MainScreen } from './MainScreen';
 
 export { MainScreen, ScreenTwo, ScreenThree, ScreenFour };
