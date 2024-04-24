@@ -10,7 +10,7 @@ export const MainScreen = () => {
           alt='Vite logo'
           style={{
             borderRadius: '50%',
-            width: '80%',
+            width: '84%',
           }}
         />
       </div>
