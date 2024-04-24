@@ -1,0 +1,34 @@
+.transparent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: transparent;  */
+  background-image: var(--bg-color);
+  position: relative; /* Ensures the header is positioned correctly */
+  z-index: 10; /* Make sure header is above other content */
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.site-name {
+  font-size: 1.5rem; /* Large text size for the site name */
+  color: white; /* White text color */
+  font-weight: bold; /* Bold font weight */
+  margin: 0; /* Remove default margin */
+}
+
+.user-icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.user-icon {
+  width: 40px; /* Example size, adjust as needed */
+  height: 40px; /* Match width or set explicitly */
+  border-radius: 50%; /* Circular border */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border: 2px solid white; /* White border around the icon */
+}
