@@ -5,10 +5,10 @@ import WebApp from '@twa-dev/sdk';
 import reactLogo from '../assets/react.svg';
 import viteLogo from '/vite.svg';
 
-export const HomeScreen = () => {
+export const MainScreen = () => {
   const [count, setCount] = useState(0);
   return (
-    <MotionWrapper title='Main Page'>
+    <MotionWrapper title='Main Screen'>
       <div>
         <a href='https://vitejs.dev' target='_blank'>
           <img src={viteLogo} className='logo' alt='Vite logo' />

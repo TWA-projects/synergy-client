@@ -1,9 +1,9 @@
 import { MotionWrapper } from '../components/MotionWrapper';
 import giphy from '/giphy.gif';
 
-export const PageThree = () => {
+export const ScreenFour = () => {
   return (
-    <MotionWrapper title='Page 1'>
+    <MotionWrapper title='Screen 4'>
       <div>
         <img
           src={giphy}

@@ -1,6 +1,6 @@
-import { HomeScreen } from './HomeScreen';
-import { PageOne } from './PageOne';
-import { PageTwo } from './PageTwo';
-import { PageThree } from './PageThree';
+import { MainScreen } from './MainScreen';
+import { ScreenTwo } from './ScreenTwo';
+import { ScreenThree } from './ScreenThree';
+import { ScreenFour } from './ScreenFour';
 
-export { HomeScreen, PageOne, PageTwo, PageThree };
+export { MainScreen, ScreenTwo, ScreenThree, ScreenFour };
