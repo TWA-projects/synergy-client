@@ -10,6 +10,7 @@ export const ScreenFour = () => {
           alt='Vite logo'
           style={{
             borderRadius: '50%',
+            width: '80%',
           }}
         />
       </div>
