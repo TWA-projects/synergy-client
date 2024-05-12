@@ -11,9 +11,9 @@ import {
 import './HomeScreen.css';
 
 export const Gallery: React.FC = () => {
-  telegramMainButton.hide();
-  telegramBackButton.hide();
-  telegramWebApp.enableClosingConfirmation();
+  telegramMainButton?.hide();
+  telegramBackButton?.hide();
+  telegramWebApp?.enableClosingConfirmation();
 
   // Using useRef here at the top level as per React's rules for hooks.
   const imgRefs = useRef<(HTMLImageElement | null)[]>(
