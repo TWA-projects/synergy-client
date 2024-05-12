@@ -4,7 +4,7 @@
   align-items: center;
   /* background-color: transparent;
   border: none; */
-  background-image: var(--bg-color);
+  /* background-image: var(--bg-color); */
   /* background-image: var(--bg-color-reversed); */
   position: fixed;
   left: 0;

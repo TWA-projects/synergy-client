@@ -7,7 +7,7 @@ import { WelcomeMessage } from './components/WelcomMessage/WelcomeMessage';
 
 export const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Header />
 
       <WelcomeMessage name='Lena' />
