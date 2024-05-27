@@ -1,19 +1,10 @@
 import { MotionWrapper } from '../components/MotionWrapper';
-import giphy from '/giphy.gif';
+import { OnboardingScreen } from '../components/OnboardingScreen';
 
 export const MainScreen = () => {
   return (
-    <MotionWrapper title='Main Screen'>
-      <div>
-        <img
-          src={giphy}
-          alt='Vite logo'
-          style={{
-            borderRadius: '50%',
-            width: '84%',
-          }}
-        />
-      </div>
+    <MotionWrapper>
+      <OnboardingScreen />
     </MotionWrapper>
   );
 };

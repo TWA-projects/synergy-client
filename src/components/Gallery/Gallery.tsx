@@ -8,7 +8,7 @@ import {
   telegramMainButton,
   telegramWebApp,
 } from '../../utils/telegramWebAppComponents';
-import './HomeScreen.css';
+import './Gallery.css';
 
 export const Gallery: React.FC = () => {
   telegramMainButton?.hide();
