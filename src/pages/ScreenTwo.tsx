@@ -1,5 +1,10 @@
 import { MotionWrapper } from '../components/MotionWrapper';
+import { ExploreScreen } from '../components/ExploreScreen';
 
 export const ScreenTwo = () => {
-  return <MotionWrapper title='Screen 2' />;
+  return (
+    <MotionWrapper>
+      <ExploreScreen />
+    </MotionWrapper>
+  );
 };
